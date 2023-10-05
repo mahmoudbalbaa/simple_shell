@@ -8,7 +8,7 @@
 
 void _prompt(void)
 {
-	char *prompt = "(simple_shell) $ ";
+	char *prompt = "($) ";
 
 	printf("%s", prompt);
 }

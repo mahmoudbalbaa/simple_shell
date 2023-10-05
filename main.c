@@ -4,22 +4,24 @@
  * main - a simple shell program
  * @argc: an argument counter
  * @argv: an array of strings
- * Return: zro
+ * Return: zero
  */
 
 
 int main(int argc, char **argv)
 {
-	char *lineptr = NULL;
-	size_t n = 0;
-
+	char *lineptr;
+	size_t n;
 start:
+	lineptr = NULL;
+	n = 0;
+
 	(void)argc;
 	(void)argv;
 
 	_prompt();
 	getline(&lineptr, &n, stdin);
-	printf("%s\n", lineptr);
+	printf("%s", lineptr);
 
 	free(lineptr);
 	goto start;
