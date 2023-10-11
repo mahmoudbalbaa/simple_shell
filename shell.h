@@ -11,5 +11,6 @@
 #include <errno.h>
 
 void _prompt(void);
+void _execute(char **argv, char *lineptr);
 
 #endif /* _SHELL_H */
