@@ -19,7 +19,9 @@ int _echo_print(char **cmd)
 		exit(EXIT_FAILURE);
 	}
 	else if (pid < 0)
+	{
 		return (-1);
+	}
 	else
 	{
 		do {

@@ -27,7 +27,7 @@ void exit_file_bul(char **cmd, char *line, FILE *fd)
 			perror("illegal number");
 		}
 	}
-	
+
 	statue = _atoi_(cmd[1]);
 	free(line);
 	free(cmd);
