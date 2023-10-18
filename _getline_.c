@@ -9,8 +9,8 @@ char *_getline_()
 {
 	int i, buffsize = BUFSIZE, rd;
 	char c = 0;
-	char b = "1";
-	char d = "d";
+	char b = '1';
+	char d = '2';
 	char *buff = malloc(buffsize);
 
 	if (buff == NULL)
