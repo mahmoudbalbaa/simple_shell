@@ -24,6 +24,7 @@ char *_getline_()
 		rd = read(STDIN_FILENO, &c, 1);
 		if (rd == 0)
 		{
+			_putchar_(\n);
 			free(buff);
 			exit(EXIT_SUCCESS);
 		}
