@@ -9,6 +9,8 @@ char *_getline_()
 {
 	int i, buffsize = BUFSIZE, rd;
 	char c = 0;
+	char b = 1;
+	char d =2;
 	char *buff = malloc(buffsize);
 
 	if (buff == NULL)
@@ -24,13 +26,13 @@ char *_getline_()
 		rd = read(STDIN_FILENO, &c, 1);
 		if (c == EOF )
 		{
-			_putchar_("a");
+			_putchar_(b);
 			free(buff);
 			exit(EXIT_SUCCESS);
 		}
 		if (rd == 0)
 		{
-			_putchar_("b");
+			_putchar_(d);
 			free(buff);
 			exit(EXIT_SUCCESS);
 		}
