@@ -24,12 +24,13 @@ char *_getline_()
 		rd = read(STDIN_FILENO, &c, 1);
 		if (c == EOF )
 		{
-			_putchar_('\n');
+			_putchar_("a");
 			free(buff);
 			exit(EXIT_SUCCESS);
 		}
 		if (rd == 0)
 		{
+			_putchar_("b");
 			free(buff);
 			exit(EXIT_SUCCESS);
 		}
