@@ -24,7 +24,7 @@ char *_getline_()
 		fflush(stdin);
 
 		rd = read(STDIN_FILENO, &c, 1);
-		if (c == EOF )
+		if (rd == EOF )
 		{
 			_putchar_(b);
 			free(buff);
