@@ -9,7 +9,7 @@ char *_getline_()
 {
 	int i, buffsize = BUFSIZE, rd;
 	char c = 0;
-	char b = 1;
+	char b = "1";
 	char d = "d";
 	char *buff = malloc(buffsize);
 
