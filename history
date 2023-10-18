@@ -27,3 +27,13 @@ ls -l
 oij
 cd ..
 pwd
+/bin/ls
+ls
+ls -l /tmp 
+exit 98
+ls /var ; ls /var
+/usr/bin/ls: cannot access ';': No such file or directory
+/usr/bin/ls: cannot access 'ls': No such file or directoryecho $$ echo $$ ls /var
+echo $?
+echo $$
+echo $PATH
