@@ -17,11 +17,17 @@ char *_getline_()
 		return (NULL);
 	}
 
-	for (i = 0; c != EOF && c != '\n'; i++)
+	for (i = 0;c != '\n'; i++)
 	{
 		fflush(stdin);
 
 		rd = read(STDIN_FILENO, &c, 1);
+		if (c == EOF )
+		{
+			_putchar_(\n);
+			free(buff);
+			exit(EXIT_SUCCESS);
+		}
 		if (rd == 0)
 		{
 			free(buff);
