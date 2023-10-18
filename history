@@ -37,3 +37,7 @@ ls /var ; ls /var
 echo $?
 echo $$
 echo $PATH
+ls
+ls -l
+jdosa
+ls

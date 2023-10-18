@@ -17,7 +17,7 @@ char *_getline_()
 		return (NULL);
 	}
 
-	for (i = 0; c != '\n'; i++)
+	for (i = 0; c != EOF && c != '\n'; i++)
 	{
 		fflush(stdin);
 
